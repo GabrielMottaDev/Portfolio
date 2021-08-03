@@ -22,7 +22,7 @@
     }
 }
 
-header,.question {
+.question {
     animation-name: load-animation;
     animation-duration: 0.8s;
     animation-iteration-count: 1;
@@ -43,9 +43,7 @@ body {
     background-image: url(../img/star-bg.svg),linear-gradient(#191c20, #24292e 15%);
     background-repeat: repeat-x;
     background-position: center 0, 0 0, 0 0;
-
-    padding: 25px 0px;
-    padding-bottom: 120px;
+    min-height: 100vh;
 }
 
 .fit-center {
@@ -76,7 +74,7 @@ header {
     padding: 20px 0px;
     display: flex;
     flex-direction: column;
-    padding: 25px 0px 45px 0px;
+    padding: 35px 0px 45px 0px;
 }
 
 header img {
@@ -102,8 +100,6 @@ header img {
     animation-fill-mode: forwards;
 }
 
-
-
 header h2 {
     margin-top: 10px;
     font-weight: 300;
@@ -117,7 +113,7 @@ header b {
 
 /* FOOTER */
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     background: #00000012;
