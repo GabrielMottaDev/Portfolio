@@ -44,7 +44,7 @@ body {
     background-repeat: repeat-x;
     background-position: center 0, 0 0, 0 0;
 
-    padding: 50px 0px;
+    padding: 25px 0px;
     padding-bottom: 120px;
 }
 
@@ -76,7 +76,7 @@ header {
     padding: 20px 0px;
     display: flex;
     flex-direction: column;
-    padding: 50px 0px 45px 0px;
+    padding: 25px 0px 45px 0px;
 }
 
 header img {
