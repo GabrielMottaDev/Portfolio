@@ -116,17 +116,17 @@ header b {
 
 /* FOOTER */
 footer {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
     width: 100%;
     background: #00000012;
     margin-top: auto;
+    padding: 20px 0px;
 }
 
 .copyright {
     text-align: center;
     font-size: 12pt;
-    padding: 40px 0px;
     color: #7292b6;
 }
 
