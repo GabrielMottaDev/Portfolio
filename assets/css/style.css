@@ -1,0 +1,182 @@
+.dev-warning {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    color: #ffffff24;
+}
+
+/* GERAIS */
+@keyframes load-animation {
+    0% {
+        opacity: 0;
+        margin-top: -2.5%;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header,.question {
+    animation-name: load-animation;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    position: relative;
+    color: rgba(255,255,255,0.65);
+    background-color: #24292e;
+    background-image: url(../img/star-bg.svg),linear-gradient(#191c20, #24292e 15%);
+    background-repeat: repeat-x;
+    background-position: center 0, 0 0, 0 0;
+
+    padding: 50px 0px;
+}
+
+.fit-center {
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center !important;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1012px) {
+    .fit-center {
+        max-width:1012px
+    }
+}
+@media (min-width: 1280px) {
+    .fit-center {
+        max-width:1280px;
+    }
+}
+
+/* HEADER */
+header {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 45px 0px;
+}
+
+header img {
+    border-radius: 50%;
+    box-shadow: #00c3ff 0px 0px 5px 1px;
+}
+
+@keyframes logo-animation {
+    0% {
+        transform: translate(0px, -15px) rotate(2.5deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(-2.5deg);
+    }
+}
+
+.logo-anim {
+    animation-name: logo-animation;
+    animation-duration: 0.8s;
+    animation-iteration-count: 11;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    animation-fill-mode: forwards;
+}
+
+
+
+header h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 19pt;
+    color: white;
+}
+
+header b {
+    color: #009fff;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #00000012;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12pt;
+    padding: 40px 0px;
+    color: #7292b6;
+}
+
+/* CONTEUDO */
+.question {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+.question div {
+    display: flex;
+}
+
+.question-header {
+    position: relative;
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.question-header::after {
+    position: absolute;
+    content: '';
+    background: #00bdff;
+    height: 2px;
+    bottom: -1px;
+    width: 52%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
+.question-header h2 {
+    font-size: 20pt;
+    font-weight: 400;
+    color: white;
+}
+
+.question-header s {
+    line-height: 36px;
+    margin-left: 5px;
+}
+
+.question-content {
+    flex-direction: column;
+}
+
+.question-content p {
+    font-size: 14pt;
+    font-weight: 300;
+    color: #c2c2c2;
+    margin-bottom: 3px;
+}
