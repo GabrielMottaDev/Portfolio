@@ -44,6 +44,8 @@ body {
     background-repeat: repeat-x;
     background-position: center 0, 0 0, 0 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .fit-center {
@@ -80,6 +82,7 @@ header {
 header img {
     border-radius: 50%;
     box-shadow: #00c3ff 0px 0px 5px 1px;
+    background: white;
 }
 
 @keyframes logo-animation {
@@ -117,6 +120,7 @@ footer {
     bottom: 0;
     width: 100%;
     background: #00000012;
+    margin-top: auto;
 }
 
 .copyright {
