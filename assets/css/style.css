@@ -197,7 +197,7 @@ footer {
 .question-header::after {
     position: absolute;
     content: '';
-    background: #00bdff;
+    background: #00bdff9e;
     height: 2px;
     bottom: -1px;
     width: 52%;
