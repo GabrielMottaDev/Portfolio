@@ -167,6 +167,7 @@ footer {
     /* bottom: 0; */
     width: 100%;
     background: #00000012;
+    background: linear-gradient(0deg, rgba(21, 108, 138, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
     margin-top: auto;
     padding: 20px 0px;
 }
